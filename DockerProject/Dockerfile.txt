@@ -1,0 +1,5 @@
+FROM openjdk:8
+COPY . /usr/src/BattleShip
+WORKDIR /usr/src/BattleShip
+RUN javac Runner.java
+CMD ["java", "Runner"]
